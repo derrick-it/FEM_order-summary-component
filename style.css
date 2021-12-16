@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body, p, h1, h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.fs-default {
+  font-size: 16px;
+}
+
+.fw-regular {
+  font-weight: 400;
+}
+
+.text-neutral {
+  color: #7280a7;
+}
+
+.wrapper {
+  position: relative;
+  height: 100vh;
+  padding: 1.8em;
+  background-color: #e0e8ff;
+  display: grid;
+  place-items: center;
+}
+
+.bg-mobile, .bg-desktop {
+  position: absolute;
+  width: 100%;
+  max-height: 50vh;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.bg-desktop {
+  display: none;
+}
+
+@media (min-width: 500px) {
+  .bg-mobile {
+    display: none;
+  }
+
+  .bg-desktop {
+    display: block;
+  }
+}
+.card {
+  max-width: 23em;
+  position: relative;
+  z-index: 1;
+  background-color: #FFFFFF;
+  border-radius: 1.2em;
+  overflow: hidden;
+}
+
+.card-content {
+  text-align: center;
+  padding: 1.5em;
+}
+.card-content .card-title h1 {
+  color: #1f2f56;
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin: 0.5em 0 0.8em;
+}
+.card-content .card-title p {
+  padding: 0 1em;
+  font-size: 0.9rem;
+  line-height: 1.5em;
+}
+.card-content .card-plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em;
+  margin-top: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: rgba(224, 232, 255, 0.2);
+}
+.card-content .card-plan img {
+  flex: 1;
+  width: 0.7em;
+  margin-right: 1rem;
+}
+.card-content .card-plan .text {
+  flex: 4;
+  text-align: left;
+}
+.card-content .card-plan .text h2 {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: #1f2f56;
+}
+.card-content .card-plan .text p {
+  color: #7280a7;
+  margin-top: 0.1em;
+  font-size: 0.9rem;
+}
+.card-content .card-plan a {
+  flex: 1;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: underline;
+  color: #3829e0;
+}
+
+.btn-primary {
+  background-color: #3829e0;
+  color: #FFFFFF;
+  width: 100%;
+  border: none;
+  border-radius: 0.7rem;
+  margin: 1.2rem 0 1.2rem;
+  padding: 0.9rem 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  box-shadow: 0 1em 20px 0 rgba(56, 41, 224, 0.2);
+}
+
+.btn-cancel {
+  color: #7280a7;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=style.css.map */

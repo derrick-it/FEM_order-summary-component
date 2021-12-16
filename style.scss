@@ -1,0 +1,166 @@
+$clr-primary: hsl(225, 100%, 94%);
+$clr-secondary: hsl(245, 75%, 52%);
+
+$pale-blue: hsl(225, 100%, 98%);
+$des-blue: hsl(224, 23%, 55%);
+$dark-blue: hsl(223, 47%, 23%);
+
+$white: #FFFFFF;
+
+*{
+  box-sizing: border-box;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
+body, p, h1, h2{
+  margin: 0;
+  padding: 0;
+}
+
+.fs-default{
+  font-size: 16px;
+}
+
+.fw-regular{
+  font-weight: 400;
+}
+
+.text-neutral{
+  color: $des-blue;
+}
+
+// Main Background
+
+.wrapper{
+  position: relative;
+  height: 100vh;
+  padding: 1.8em;
+  background-color: $clr-primary;
+  display: grid;
+  place-items: center;
+}
+
+.bg-mobile, .bg-desktop{
+  position: absolute;
+  width: 100%;
+  max-height: 50vh;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.bg-desktop{
+  display: none;
+}
+
+@media (min-width: 500px){
+  .bg-mobile{
+    display: none;
+  }
+  .bg-desktop{
+    display: block;
+  }
+}
+
+// Card
+
+.card{
+  max-width: 23em;
+  position: relative;
+  z-index: 1;
+  background-color: $white;
+  border-radius: 1.2em;
+  overflow: hidden;
+}
+
+.card-content{
+  text-align: center;
+  padding: 1.5em;
+
+  .card-title{
+    h1{
+      color: $dark-blue;
+      font-size: 1.4rem;
+      font-weight: 800;
+      margin: 0.5em 0 0.8em;
+    }
+    p{
+      padding: 0 1em;
+      font-size: 0.9rem;
+      line-height: 1.5em;
+    }
+  }
+
+  .card-plan{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em;
+    margin-top: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: rgba($clr-primary, 0.2);
+
+    img{
+      flex: 1;
+      width: 0.7em;
+      margin-right: 1rem;
+    }
+    .text{
+      flex: 4;
+      text-align: left;
+      h2{
+        font-size: 0.9rem;
+        font-weight: 800;
+        color: $dark-blue;
+      }
+      p{
+        color: $des-blue;
+        margin-top: 0.1em;
+        font-size: 0.9rem;
+      }
+    }
+
+    a{
+      flex: 1;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-decoration: underline;
+      color: $clr-secondary;
+    }
+  }
+}
+
+.btn-primary{
+  background-color: $clr-secondary;
+  color: $white;
+  width: 100%;
+  border: none;
+  border-radius: 0.7rem;
+  margin: 1.2rem 0 1.2rem;
+  padding: 0.9rem 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  box-shadow: 0 1em 20px 0 rgba($clr-secondary, 0.2);
+}
+
+.btn-cancel{
+  color: $des-blue;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+
+
+
+
+
