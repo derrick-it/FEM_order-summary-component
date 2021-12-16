@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   font-family: "Red Hat Display", sans-serif;
+  transition: 0.2s;
 }
 
 a {
@@ -119,6 +120,11 @@ body, p, h1, h2 {
   text-decoration: underline;
   color: #3829e0;
 }
+.card-content .card-plan a:hover {
+  text-decoration: none;
+  color: #3829e0;
+  opacity: 0.7;
+}
 
 .btn-primary {
   background-color: #3829e0;
@@ -132,12 +138,19 @@ body, p, h1, h2 {
   font-weight: 700;
   letter-spacing: 0.05em;
   box-shadow: 0 1em 20px 0 rgba(56, 41, 224, 0.2);
+  cursor: pointer;
+}
+.btn-primary:hover {
+  background-color: rgba(56, 41, 224, 0.7);
 }
 
 .btn-cancel {
   color: #7280a7;
   font-size: 0.8rem;
   font-weight: 700;
+}
+.btn-cancel:hover {
+  color: #1f2f56;
 }
 
 /*# sourceMappingURL=style.css.map */

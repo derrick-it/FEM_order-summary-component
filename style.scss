@@ -10,6 +10,7 @@ $white: #FFFFFF;
 *{
   box-sizing: border-box;
   font-family: 'Red Hat Display', sans-serif;
+  transition: 0.2s;
 }
 
 a{
@@ -135,6 +136,11 @@ body, p, h1, h2{
       font-weight: 600;
       text-decoration: underline;
       color: $clr-secondary;
+      &:hover{
+        text-decoration: none;
+        color: $clr-secondary;
+        opacity: 0.7;
+      }
     }
   }
 }
@@ -151,12 +157,21 @@ body, p, h1, h2{
   font-weight: 700;
   letter-spacing: 0.05em;
   box-shadow: 0 1em 20px 0 rgba($clr-secondary, 0.2);
+  cursor: pointer;
+
+  &:hover{
+    background-color: rgba($clr-secondary, 0.7);
+  }
 }
 
 .btn-cancel{
   color: $des-blue;
   font-size: 0.8rem;
   font-weight: 700;
+
+  &:hover{
+    color: $dark-blue;
+  }
 }
 
 
