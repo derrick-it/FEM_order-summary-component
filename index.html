@@ -19,15 +19,15 @@
 <body>
 
   <main class="wrapper">
-    <img class="bg-mobile" src="./images/pattern-background-mobile.svg" alt="">
-    <img class="bg-desktop" src="./images/pattern-background-desktop.svg" alt="">
+    <img class="bg-mobile" aria-hidden="true" src="./images/pattern-background-mobile.svg" alt="">
+    <img class="bg-desktop" aria-hidden="true" src="./images/pattern-background-desktop.svg" alt="">
 
     <div class="card">
-      <header class="card-header">
-        <img src="./images/illustration-hero.svg" alt="">
-      </header>
+      <div class="card-header">
+        <img src="./images/illustration-hero.svg" alt="" aria-hidden="true">
+      </div>
 
-      <section class="card-content">
+      <div class="card-content">
         <div class="card-title">
           <h1>Order Summary</h1>
           <p class="text-neutral fs-default">
@@ -37,7 +37,7 @@
         </div>
 
         <div class="card-plan">
-          <img src="./images/icon-music.svg" alt="">
+          <img src="./images/icon-music.svg" alt="" aria-hidden="true">
           <div class="text">
             <h2 class="fs-default">Annual Plan</h2>
             <p>$59.99/year</p>
@@ -49,9 +49,7 @@
           <button class="btn-primary">Proceed to Payment</button>
         </div>
         <a class="btn-cancel" href="">Cancel Order</a>
-      </section>
-
-      
+      </div>
     </div>
   </main>
 
